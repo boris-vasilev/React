@@ -10,6 +10,9 @@ export default class BooksAll extends React.Component {
         this.state = {
             books: []
         }
+        this.sortByDate = this.sortByDate.bind(this)
+        this.sortByTitle = this.sortByTitle.bind(this)
+        this.sortByAuthor = this.sortByAuthor.bind(this)
     }
 
     componentDidMount() {
@@ -67,9 +70,9 @@ export default class BooksAll extends React.Component {
             <div>
                 <h1>All Books:</h1>
                 <p>Sort:
-                    <button onClick={this.sortByDate.bind(this)}>Date</button>
-                    <button onClick={this.sortByAuthor.bind(this)}>Author</button>
-                    <button onClick={this.sortByTitle.bind(this)}>Title</button>
+                    <button onClick={this.sortByDate}>Date</button>
+                    <button onClick={this.sortByAuthor}>Author</button>
+                    <button onClick={this.sortByTitle}>Title</button>
                 </p>
                 {bookNodes}
             </div>

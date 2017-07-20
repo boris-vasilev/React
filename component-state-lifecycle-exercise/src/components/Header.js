@@ -7,6 +7,7 @@ let Header = ()=>(
     <nav>
         <Link to="/">Home </Link>
         <Link to='/books/all'>All Books </Link>
+        <Link to="/authors/all">All Authors</Link>
     </nav>
 )
 export default Header
