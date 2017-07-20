@@ -40,7 +40,6 @@ class HomePage extends React.Component{
             return (
                 <div className='book' key={b.id}>
                     <Link to={`/books/${b.id}`}>
-                        <img src={b.image} alt='cover' />
                         <h3>{b.title}</h3>
                     </Link>
                     <p>Author: <Link to={`/authors/${b.author}`}>{b.authorName}</Link></p>
